@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap')
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    
+    background-color: #121212;
+    color: white;
+
+}
+
+.left {
+    margin: 15px 0px;
+    width: 25vw;
+}
+
+.right {
+    width: 75vw;
+}
+
+.home img {
+
+    padding: 0px;
+}
+
+.home ul li {
+    padding-top: 14px;
+    list-style: none;
+    gap: 15px;
+    display: flex;
+    width: 14px;
+}
+
+.heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 40px;
+    padding: 23px 14px;
+    font-weight: bolder;
+}
+
+.library {
+    min-height: 80vh;
+    position: relative;
+}
+
+.footer {
+    font-size: 10px;
+    color: #8c8c8c;
+    gap: 13px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.right {
+    margin: 15px 0px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34);
+
+}
+
+.header>* {
+    padding: 20px;
+
+
+}
+
+.spotify-playlist {
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    margin: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.card {
+    width: 200px;
+    position: relative;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.spotify-playlist .card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.play {
+    position: absolute;
+    top: 168px;
+    right: 17px;
+    opacity: 0;
+    right: 17px;
+    top: 168px;
+}
+
+.buttons>* {
+    margin: 0 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+.signupbtn {
+    background-color: rgba(34, 34, 34);
+    color: rgba(156, 148, 148);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signupbtn:hover {
+    font-size: 17px;
+    color: white;
+}
+.loginbtn {
+    background-color:white;
+    border-radius: 20px;
+    color: rgb(17, 17, 17);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 80px;
+    cursor: pointer;
+    padding: 9px 10px;
+    font-weight: bold;
+    text-transform: propercase;
+}
+.loginbtn:hover {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+.spotify-playlist {
+    
+    
+}
+.playbar {
+    position: absolute;
+    bottom: 0;
+    top: 710px;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    height: 80px;
+    background-color: rgba(34, 34, 34);
+}
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    
+}
