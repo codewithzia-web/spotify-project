@@ -535,6 +535,7 @@ body {
 
     }
 
+
     .timevol .time {
         margin: 10px;
     }
@@ -577,6 +578,32 @@ body {
     }
 }
 
+@media (max-width: 800px){
+    .card{
+        width: 70vw;
+        margin: 5px 15px;
+        height: 55vh;
+        padding: 5px;
+    }
+    .card-container{
+        width: 90%;
+        
+    }
+   .playbar *{
+    font-size: 19px;
+   } 
+ .songlist ul li {
+        width: 275px;
+        height: 40px;
+        padding: 15px;
+
+    }  
+    .left{
+        width: 85vw;
+    }
+}
+
+
 @media (max-width: 400px) {
     .card {
         margin: 20px;
@@ -596,8 +623,7 @@ body {
     }
 
     .abovebar {
-        display: flex;
-        flex-direction: column;
+    
     }
 
     .timevol {
@@ -622,25 +648,32 @@ body {
     }
 
     .left>.library {
-        height: 70vh;
+        height: 50vh;
     }
     .left{
-        background-color: yellow;
+        /* background-color: yellow; */
         height: 90vh;
     }
-}
-@media (max-width: 800px){
-    .card{
-        width: 39vw;
-        margin: 5px;
-        height: 40vh;
+    .songlist ul{
+        /* background-color: red; */
     }
-    .card-container{
-        width: 90%;
+    .songlist ul li {
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+
+    }  
+    .left{
+        width: 85vw;
         
     }
-   .playbar *{
-    font-size: 19px;
-   } 
-   
+    .footer{
+        width: 64vw;
+    
+        margin: 30px 15px;
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
 }
