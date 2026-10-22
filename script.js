@@ -29,7 +29,7 @@ async function getSongs() {
 }
 
 function playMusic(track, pause = false) {
-    currentSong.src = `/songs/${encodeURIComponent(track)}`;
+    currentSong.src = `./songs/${encodeURIComponent(track)}`;
     const seekbar = document.querySelector(".seekbar");
     seekbar.value = "0";
     seekbar.disabled = true;
