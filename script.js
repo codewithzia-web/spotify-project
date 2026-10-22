@@ -13,7 +13,7 @@ function secondsToMinutesSeconds(seconds) {
 }
 
 async function getSongs() {
-    const response = await fetch("/songs/");
+    const response = await fetch("./songs/");
 
     if (!response.ok) {
         throw new Error(`Could not load songs (HTTP ${response.status})`);
