@@ -294,7 +294,7 @@ body {
     padding: 0;
     background: transparent;
     cursor: pointer;
-    touch-action: pan-y;
+    
 }
 
 .seekbar:focus-visible {
