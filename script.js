@@ -39,11 +39,11 @@ function playMusic(track, pause = false) {
     if (!pause) {
         currentSong.play()
             .then(() => {
-                document.getElementById("play").src = "/img/pause.svg";
+                document.getElementById("play").src = "/pause.svg";
             })
             .catch(error => console.error("Could not play song:", error));
     } else {
-        document.getElementById("play").src = "/img/play.svg";
+        document.getElementById("play").src = "/play.svg";
     }
 
     document.querySelector(".songinfo").textContent = track.replace(/\.mp3$/i, "");
@@ -77,14 +77,14 @@ async function main() {
     songs.forEach(song => {
         const item = document.createElement("li");
         item.innerHTML = `
-            <img class="invert" width="34" src="/img/music.svg" alt="music">
+            <img class="invert" width="34" src="/music.svg" alt="music">
             <div class="info">
                 <div class="songname"></div>
                 <div class="songartist"></div>
             </div>
             <div class="playnow">
                 <span class="duration">Play now</span>
-                <img class="invert" src="/img/play.svg" alt="play">
+                <img class="invert" src="/play.svg" alt="play">
             </div>`;
         item.querySelector(".songname").textContent = song.replace(/\.mp3$/i, "");
         item.addEventListener("click", () => playMusic(song));
@@ -95,12 +95,12 @@ async function main() {
         if (currentSong.paused) {
             currentSong.play()
                 .then(() => {
-                    playButton.src = "/img/pause.svg";
+                    playButton.src = "/pause.svg";
                 })
                 .catch(error => console.error("Could not play song:", error));
         } else {
             currentSong.pause();
-            playButton.src = "/img/play.svg";
+            playButton.src = "/play.svg";
         }
     });
 
@@ -131,7 +131,7 @@ async function main() {
     });
 
     currentSong.addEventListener("ended", () => {
-        playButton.src = "/img/play.svg";
+        playButton.src = "/play.svg";
     });
 
     seekbar.addEventListener("input", () => {
